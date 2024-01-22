@@ -1,0 +1,13 @@
+
+arg0=--batch-file=--stop
+arg1=stop
+arg2=defaultServer
+exit=1
+
+                 Java home:  C:\Program Files\Java\jdk-20
+              Install root:  D:/probafeladat/teszteles/anagram/wlp/
+          System libraries:  D:/probafeladat/teszteles/anagram/wlp/lib/
+                 User root:  D:/probafeladat/teszteles/anagram/wlp/usr/
+                    Config:  D:/probafeladat/teszteles/anagram/wlp/usr/servers/defaultServer/
+                    Output:  D:/probafeladat/teszteles/anagram/wlp/usr/servers/defaultServer/
+
