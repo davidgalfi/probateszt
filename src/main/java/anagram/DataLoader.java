@@ -9,8 +9,8 @@ import java.util.List;
 
 public class DataLoader implements ServletContextListener {
 
-    static final List<String> WORDS = new ArrayList<>();
-    static int numberOfWords = 0;
+    public static final List<String> WORDS = new ArrayList<>();
+    public static int numberOfWords = 0;
 
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
