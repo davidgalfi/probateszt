@@ -34,11 +34,11 @@
     ```
 ​
 2. Go to the browser:
-   1. Load [this URL](http://localhost:9080/anagram) and you will see a big `It works` message
-   2. Load [this URL](http://localhost:9080/anagram/api/hello) and you will see this JSON Object:
+   1. Load [this URL](http://localhost:9080/anagram/) and you will see a big `Anagram App` message
+   2. Load [this URL](http://localhost:9080/anagram/api/permutations?word=asd) and you will see this JSON Object:
    
         ```json
-        {"hello":"Hello"}
+        {"anagram":["asd","ads","sad","sda","dsa","das"]}
         ```
 ​
 3. To stop the server just simply stop the command what you started in step 1.
@@ -63,7 +63,7 @@
 ​
 3. To call your API directly from your browser use this base URL:
     
-    `http://localhost:9080/anagram/api/`
+    `http://localhost:9080/anagram/api/anagram/`
 ​
 ## How to run your tests
 
