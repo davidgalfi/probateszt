@@ -1,1 +1,18 @@
-Unrecognized VM option 'MaxPermSize=256m'
+OpenJDK 64-Bit Server VM warning: Ignoring option MaxPermSize; support was removed in 8.0
+Launching defaultServer (WebSphere Application Server 19.0.0.5/wlp-1.0.28.cl190520190522-2227) on OpenJDK 64-Bit Server VM, version 11.0.18+10 (en_GB)
+[AUDIT   ] CWWKE0001I: The server defaultServer has been launched.
+[AUDIT   ] CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/19.0.0.5/lafiles/en.html
+[AUDIT   ] CWWKZ0058I: Monitoring dropins for applications.
+[AUDIT   ] CWWKT0016I: Web application available (default_host): http://localhost:9080/anagram/
+[AUDIT   ] CWWKZ0001I: Application anagram started in 9,790 seconds.
+[AUDIT   ] CWWKF0012I: The server installed the following features: [appSecurity-2.0, beanValidation-1.1, cdi-1.2, concurrent-1.0, distributedMap-1.0, ejbLite-3.2, el-3.0, jaxrs-2.0, jaxrsClient-2.0, jdbc-4.1, jndi-1.0, jpa-2.1, jpaContainer-2.1, jsf-2.2, json-1.0, jsonp-1.0, jsp-2.3, localConnector-1.0, managedBeans-1.0, servlet-3.1, ssl-1.0, webProfile-7.0, websocket-1.1].
+[AUDIT   ] CWWKF0011I: The defaultServer server is ready to run a smarter planet. The defaultServer server started in 29,530 seconds.
+[WARNING ] CWWKW1002W: The CDI scope of JAXRS-2.0 Provider JsonArrayWriter is javax.enterprise.context.Dependent. Liberty gets the provider instance from CDI.
+[WARNING ] CWWKW1002W: The CDI scope of JAXRS-2.0 Provider JsonObjectReader is javax.enterprise.context.Dependent. Liberty gets the provider instance from CDI.
+[WARNING ] CWWKW1002W: The CDI scope of JAXRS-2.0 Provider JsonObjectWriter is javax.enterprise.context.Dependent. Liberty gets the provider instance from CDI.
+[WARNING ] CWWKW1002W: The CDI scope of JAXRS-2.0 Provider JsonArrayReader is javax.enterprise.context.Dependent. Liberty gets the provider instance from CDI.
+[AUDIT   ] CWWKE0055I: Server shutdown requested on 2024. január 22., hétfõ at 23:09. The server defaultServer is shutting down.
+[AUDIT   ] CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[AUDIT   ] CWWKT0017I: Web application removed (default_host): http://localhost:9080/anagram/
+[AUDIT   ] CWWKZ0009I: The application anagram has stopped successfully.
+[AUDIT   ] CWWKE0036I: The server defaultServer stopped after 34,773 seconds.

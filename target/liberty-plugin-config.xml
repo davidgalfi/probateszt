@@ -27,6 +27,11 @@
     <refresh>false</refresh>
     <installAppsConfigDropins>D:\probafeladat\teszteles\anagram\wlp\usr\servers\defaultServer\configDropins\defaults\install_apps_configuration_1491924271.xml</installAppsConfigDropins>
     <projectType>liberty-assembly</projectType>
+    <projectCompileDependency>com.google.code.gson:gson:2.10.1</projectCompileDependency>
+    <projectCompileDependency>org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.22</projectCompileDependency>
+    <projectCompileDependency>org.jetbrains.kotlin:kotlin-stdlib:1.9.22</projectCompileDependency>
+    <projectCompileDependency>org.jetbrains:annotations:13.0</projectCompileDependency>
+    <projectCompileDependency>org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.22</projectCompileDependency>
     <projectCompileDependency>javax:javaee-api:8.0.1</projectCompileDependency>
     <projectCompileDependency>com.sun.mail:javax.mail:1.6.2</projectCompileDependency>
     <projectCompileDependency>javax.activation:activation:1.1</projectCompileDependency>
@@ -43,9 +48,6 @@
     <projectCompileDependency>com.squareup.okhttp3:okhttp-jvm:5.0.0-alpha.12</projectCompileDependency>
     <projectCompileDependency>com.squareup.okio:okio-jvm:3.7.0</projectCompileDependency>
     <projectCompileDependency>com.squareup.okio:okio:2.2.2</projectCompileDependency>
-    <projectCompileDependency>org.jetbrains.kotlin:kotlin-stdlib:1.2.60</projectCompileDependency>
-    <projectCompileDependency>org.jetbrains.kotlin:kotlin-stdlib-common:1.2.60</projectCompileDependency>
-    <projectCompileDependency>org.jetbrains:annotations:13.0</projectCompileDependency>
     <projectCompileDependency>commons-io:commons-io:2.15.1</projectCompileDependency>
     <warSourceDirectory>D:\probafeladat\teszteles\anagram\src\main\webapp</warSourceDirectory>
 </liberty-plugin-config>

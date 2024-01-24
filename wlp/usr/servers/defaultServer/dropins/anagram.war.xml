@@ -2,6 +2,11 @@
 <archive>
     <dir sourceOnDisk="D:\probafeladat\teszteles\anagram\src\main\webapp" targetInArchive="/"/>
     <dir sourceOnDisk="D:\probafeladat\teszteles\anagram\target\classes" targetInArchive="/WEB-INF/classes"/>
+    <file sourceOnDisk="C:\Users\DAVID\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar" targetInArchive="/WEB-INF/lib/gson-2.10.1.jar"/>
+    <file sourceOnDisk="C:\Users\DAVID\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.9.22\kotlin-stdlib-jdk8-1.9.22.jar" targetInArchive="/WEB-INF/lib/kotlin-stdlib-jdk8-1.9.22.jar"/>
+    <file sourceOnDisk="C:\Users\DAVID\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.9.22\kotlin-stdlib-1.9.22.jar" targetInArchive="/WEB-INF/lib/kotlin-stdlib-1.9.22.jar"/>
+    <file sourceOnDisk="C:\Users\DAVID\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar" targetInArchive="/WEB-INF/lib/annotations-13.0.jar"/>
+    <file sourceOnDisk="C:\Users\DAVID\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.9.22\kotlin-stdlib-jdk7-1.9.22.jar" targetInArchive="/WEB-INF/lib/kotlin-stdlib-jdk7-1.9.22.jar"/>
     <file sourceOnDisk="C:\Users\DAVID\.m2\repository\javax\javaee-api\8.0.1\javaee-api-8.0.1.jar" targetInArchive="/WEB-INF/lib/javaee-api-8.0.1.jar"/>
     <file sourceOnDisk="C:\Users\DAVID\.m2\repository\com\sun\mail\javax.mail\1.6.2\javax.mail-1.6.2.jar" targetInArchive="/WEB-INF/lib/javax.mail-1.6.2.jar"/>
     <file sourceOnDisk="C:\Users\DAVID\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar" targetInArchive="/WEB-INF/lib/activation-1.1.jar"/>
@@ -18,9 +23,6 @@
     <file sourceOnDisk="C:\Users\DAVID\.m2\repository\com\squareup\okhttp3\okhttp-jvm\5.0.0-alpha.12\okhttp-jvm-5.0.0-alpha.12.jar" targetInArchive="/WEB-INF/lib/okhttp-jvm-5.0.0-alpha.12.jar"/>
     <file sourceOnDisk="C:\Users\DAVID\.m2\repository\com\squareup\okio\okio-jvm\3.7.0\okio-jvm-3.7.0.jar" targetInArchive="/WEB-INF/lib/okio-jvm-3.7.0.jar"/>
     <file sourceOnDisk="C:\Users\DAVID\.m2\repository\com\squareup\okio\okio\2.2.2\okio-2.2.2.jar" targetInArchive="/WEB-INF/lib/okio-2.2.2.jar"/>
-    <file sourceOnDisk="C:\Users\DAVID\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.2.60\kotlin-stdlib-1.2.60.jar" targetInArchive="/WEB-INF/lib/kotlin-stdlib-1.2.60.jar"/>
-    <file sourceOnDisk="C:\Users\DAVID\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.2.60\kotlin-stdlib-common-1.2.60.jar" targetInArchive="/WEB-INF/lib/kotlin-stdlib-common-1.2.60.jar"/>
-    <file sourceOnDisk="C:\Users\DAVID\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar" targetInArchive="/WEB-INF/lib/annotations-13.0.jar"/>
     <file sourceOnDisk="C:\Users\DAVID\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar" targetInArchive="/WEB-INF/lib/commons-io-2.15.1.jar"/>
     <file sourceOnDisk="D:\probafeladat\teszteles\anagram\target\tmp\META-INF\MANIFEST.MF" targetInArchive="/META-INF/MANIFEST.MF"/>
 </archive>
