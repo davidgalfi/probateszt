@@ -6,30 +6,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anagram App</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 5px 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #permutationResult, #anagramResult {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        hr {
+            margin: 20px 0;
+        }
+
+        .meaning {
+            margin-left: 20px;
+        }
+
+        .definition {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        .example {
+            margin-left: 20px;
+            margin-top: 5px;
+            color: #555;
+        }
+    </style>
+    
 </head>
 
 <body>
-<h1>Anagram App</h1>
+    <h1>Anagram App</h1>
 
-<!-- Form for Permutations -->
-<form id="permutationForm">
-    <label for="permutationWord">Enter a word:</label>
-    <input type="text" id="permutationWord" name="permutationWord" required>
-    <button type="button" onclick="getPermutations()">Get Permutations</button>
-    <div id="permutationResult"></div>
-</form>
+    <!-- Form for Permutations -->
+    <form id="permutationForm">
+        <label for="permutationWord">Enter a word:</label>
+        <input type="text" id="permutationWord" name="permutationWord" required>
+        <button type="button" onclick="getPermutations()">Get Permutations</button>
+        <div id="permutationResult"></div>
+    </form>
 
-<br>
+    <br>
 
-<!-- Form for Anagrams -->
-<form id="anagramForm">
-    <label for="anagramWord">Enter a word:</label>
-    <input type="text" id="anagramWord" name="anagramWord" required>
-    <button type="button" onclick="getAnagrams()">Get Anagrams</button>
-    <div id="anagramResult"></div>
-</form>
+    <!-- Form for Anagrams -->
+    <form id="anagramForm">
+        <label for="anagramWord">Enter a word:</label>
+        <input type="text" id="anagramWord" name="anagramWord" required>
+        <button type="button" onclick="getAnagrams()">Get Anagrams</button>
+        <div id="anagramResult"></div>
+    </form>
 
-<script>
+    <script>
         async function getPermutations() {
             const word = document.getElementById('permutationWord').value;
             const response = await fetch(`/anagram/api/permutations?word=${word}`);
@@ -41,7 +106,31 @@
             const word = document.getElementById('anagramWord').value;
             const response = await fetch(`/anagram/api/anagram?word=${word}`);
             const result = await response.json();
-            document.getElementById('anagramResult').innerText = JSON.stringify(result, null, 2);
+            document.getElementById('anagramResult').innerHTML = formatResults(result);
+        }
+
+        function formatResults(results) {
+            let formattedResult = '';
+            results.anagram.forEach(anagram => {
+                formattedResult += `<div><strong>Word:</strong> ${anagram.word}</div>`;
+                formattedResult += `<div><strong>Phonetic:</strong> ${anagram.phonetic}</div>`;
+                anagram.meanings.forEach(meaning => {
+                    formattedResult += `<div><strong>Part of Speech:</strong> ${meaning.partOfSpeech}</div>`;
+                    const maxDefinitions = 2;
+                    let definitionsCount = 0;
+                    meaning.definitions.forEach(definition => {
+                        if (definitionsCount < maxDefinitions) {
+                            formattedResult += `<div><strong>Definition:</strong> ${definition.definition}</div>`;
+                            if (definition.example) {
+                                formattedResult += `<div><strong>Example:</strong> ${definition.example}</div>`;
+                            }
+                            definitionsCount++;
+                        }
+                    });
+                });
+                formattedResult += '<hr>';
+            });
+            return formattedResult;
         }
     </script>
 </body>

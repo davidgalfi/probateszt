@@ -1,6 +1,0 @@
-
- Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
-------+------+---------------------------+---------------------------+---------------------------
-     0      5 2024.01.24. 17:37:08:060 CET 2024.01.24. 17:38:43:558 CET com.google.gson.JsonSyntaxException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
-                                                                            - D:\probafeladat\teszteles\anagram\wlp\usr\servers\defaultServer\logs\ffdc\ffdc_24.01.24_17.37.08.0.log
-------+------+---------------------------+---------------------------+---------------------------
