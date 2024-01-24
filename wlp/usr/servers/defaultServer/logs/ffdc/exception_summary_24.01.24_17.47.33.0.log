@@ -1,0 +1,7 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      8 2024.01.24. 17:47:33:037 CET 2024.01.24. 17:49:23:959 CET org.apache.cxf.interceptor.Fault com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - D:\probafeladat\teszteles\anagram\wlp\usr\servers\defaultServer\logs\ffdc\ffdc_24.01.24_17.48.24.0.log
+                                                                            - D:\probafeladat\teszteles\anagram\wlp\usr\servers\defaultServer\logs\ffdc\ffdc_24.01.24_17.47.33.0.log
+------+------+---------------------------+---------------------------+---------------------------

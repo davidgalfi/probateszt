@@ -1,7 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram App</title>
+</head>
 
 <body>
-    <h1>It works</h1>
+<h1>Anagram App</h1>
+
+<!-- Form for Permutations -->
+<form id="permutationForm">
+    <label for="permutationWord">Enter a word:</label>
+    <input type="text" id="permutationWord" name="permutationWord" required>
+    <button type="button" onclick="getPermutations()">Get Permutations</button>
+    <div id="permutationResult"></div>
+</form>
+
+<br>
+
+<!-- Form for Anagrams -->
+<form id="anagramForm">
+    <label for="anagramWord">Enter a word:</label>
+    <input type="text" id="anagramWord" name="anagramWord" required>
+    <button type="button" onclick="getAnagrams()">Get Anagrams</button>
+    <div id="anagramResult"></div>
+</form>
+
+<script>
+        async function getPermutations() {
+            const word = document.getElementById('permutationWord').value;
+            const response = await fetch(`/anagram/api/permutations?word=${word}`);
+            const result = await response.json();
+            document.getElementById('permutationResult').innerText = JSON.stringify(result, null, 2);
+        }
+
+        async function getAnagrams() {
+            const word = document.getElementById('anagramWord').value;
+            const response = await fetch(`/anagram/api/anagram?word=${word}`);
+            const result = await response.json();
+            document.getElementById('anagramResult').innerText = JSON.stringify(result, null, 2);
+        }
+    </script>
 </body>
 
 </html>

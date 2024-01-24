@@ -70,7 +70,7 @@ public class HelloTest {
         DataLoader dataLoader = new DataLoader();
         dataLoader.contextInitialized();
 
-        List<WordApiResponse> information = anagram.getWordsAttribute("gto");
+        List<WordApiResponse> information = anagram.getWordsAttribute("aple");
 
         assertEquals(3, information.size());
     }

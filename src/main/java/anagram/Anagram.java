@@ -45,21 +45,19 @@ public class Anagram {
             Call call = client.newCall(request);
             Response response = call.execute();
 
-            String jsonResponse = response.body().string();
+            int responseCode = response.code();
 
-            Gson gson = new Gson();
-            Type listType = new TypeToken<List<WordApiResponse>>() {}.getType();
-            List<WordApiResponse> wordApiResponseList = gson.fromJson(jsonResponse, listType);
+            if (responseCode == 200) {
+                String jsonResponse = response.body().string();
+                Gson gson = new Gson();
+                Type listType = new TypeToken<List<WordApiResponse>>() {}.getType();
+                List<WordApiResponse> wordApiResponseList = gson.fromJson(jsonResponse, listType);
 
-            System.out.println(wordApiResponseList);
+                System.out.println(wordApiResponseList);
 
-            allInformation.addAll(wordApiResponseList);
+                allInformation.addAll(wordApiResponseList);
+            }
         }
-
-        for(WordApiResponse wordApiResponse : allInformation){
-            System.out.println(wordApiResponse);
-        }
-
         return allInformation;
     }
 
